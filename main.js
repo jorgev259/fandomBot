@@ -1,17 +1,15 @@
 const Discord = require('discord.js');
-//const SpoilerBot = require('discord-spoiler-bot');
+const SpoilerBot = require('discord-spoiler-bot');
 var numbers = ["1⃣","2⃣","3⃣","4⃣","5⃣","6⃣","7⃣","8⃣","9⃣", "🔟"];
 
 var util = require('../akira/utilities.js')
 let client = new Discord.Client();
 
 client.on('ready',()=>{
-    client.user.setUsername('fandomChan');
-    console.log('I am ready!');
     util.log(client,'I am ready!');
 
-    //let bot = new SpoilerBot({client: client});
-    //bot.connect();
+    let bot = new SpoilerBot({client: client});
+    bot.connect();
 })
 
 client.on('raw', async event => {
