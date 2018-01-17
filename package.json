@@ -1,0 +1,25 @@
+{
+  "name": "fandomchan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "canvas": "^1.6.9",
+    "discord-spoiler-bot": "^2.0.5",
+    "discord.js": "^12.0.0-dev"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rikumax25/fandomBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rikumax25/fandomBot/issues"
+  },
+  "homepage": "https://github.com/rikumax25/fandomBot#readme"
+}
