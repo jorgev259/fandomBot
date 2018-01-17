@@ -6,6 +6,7 @@ var util = require('../akira/utilities.js')
 let client = new Discord.Client();
 
 client.on('ready',()=>{
+    client.user.setUsername('fandomChan');
     console.log('I am ready!');
     util.log(client,'I am ready!');
 
