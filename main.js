@@ -7,8 +7,10 @@ let client = new Discord.Client();
 
 client.on('ready',()=>{
     util.log(client,'I am ready!');
-
-    let bot = new SpoilerBot({client: client});
+    let config = {
+        client: client,
+    };
+    let bot = new SpoilerBot(config);
     bot.connect();
 })
 
