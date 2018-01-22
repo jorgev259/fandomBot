@@ -8,7 +8,7 @@ let client = new Discord.Client();
 client.on('ready',()=>{
     util.log(client,'I am ready!');
 
-    let bot = new SpoilerBot({config:require("../data/tokens.json").fandom});
+    let bot = new SpoilerBot({token:require("../data/tokens.json").fandom});
     bot.connect();
 })
 
