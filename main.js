@@ -12,7 +12,7 @@ client.on('ready',()=>{
     bot.connect();
 })
 
-client.on('raw', async event => {
+/*client.on('raw', async event => {
     if (event.t !== 'MESSAGE_REACTION_ADD') return;
 
 	const { d: data } = event;
@@ -38,13 +38,13 @@ client.on('messageReactionAdd', (receivedReaction, user) => {
 			receivedReaction.remove(user);
 		}
     }
-});
+});*/
 
 client.on('message',message=>{
     switch(message.channel.name){
-        case "creative":
+        /*case "creative":
             if(message.attachments.size > 0 || message.embeds.length>0) reactNumber(0,5,message);
-            break;
+            break;*/
 
         case "fandom":
             util.talk(client,message);
